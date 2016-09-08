@@ -11,7 +11,7 @@
     <div class="techs" layout-align="center">
 
       <div>
-        <form name="userForm">
+        <form ng-submit="alunos.salvar()" name="userForm">
           <video id="cam" autoplay width="150" height="200"></video>
           <canvas id="foto" width="150" height="200"></canvas>
           <md-button id="snapshot" ng-click="alunos.snapshot()" class="md-raised md-danger">Tirar Foto</md-button><br>
