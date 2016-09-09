@@ -6,6 +6,12 @@
   .controller('AlunosController', AlunosController);
 
   function AlunosController($location){
+    var APP_ID = '3AD2E853-A2D3-F0D1-FFD4-E42A3523D800';
+    var JS_SECRET_KEY = 'A7F13BCB-CAEE-8D9F-FF61-6EF4B232BF00';
+    var APP_VERSION = 'v1';
+
+    Backendless.initApp(APP_ID, JS_SECRET_KEY, APP_VERSION);
+
     var vm = this;
     vm.salvar = salvar;
     vm.snapshot = snapshot;
@@ -13,6 +19,20 @@
 
     vm.aluno = {};
     vm.foto = {};
+
+    function Alunos(args) {
+      args = args || {};
+      this.nome = args.nome || "";
+      this.sobrenome = args.sobrenome || "";
+      this.email = args.email || "";
+      this.matricula = args.matricula || "";
+      this.endereco = args.endereco || "";
+      this.numero = args.numero || "";
+      this.CEP = args.CEP || "";
+      this.cidade = args.cidade || "";
+      this.estado = args.estado || "";
+      this.apresentacao = args.apresentacao || "";
+    }
 
     function getAlunos(){
 
@@ -29,7 +49,9 @@
     vm.alunosAll = getAlunos();
 
     function salvar(){
+      var al = new Alunos(vm.aluno);
 
+      var alunosSalvos = Backendless.Persistence.of( Alunos ).save( al );
       vm.alunosAll.push(vm.aluno);
       vm.aluno = {};
 
