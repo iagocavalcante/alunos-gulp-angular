@@ -10,14 +10,14 @@
     </section>
 
     <div class="techs">
-      <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+      <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="aluno in main.alunosMain">
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">Card with image</span>
-            <span class="md-subhead">Large</span>
+            <span class="md-headline">{{aluno.nome}}</span>
+            <span class="md-subhead">{{aluno.sobrenome}}</span>
           </md-card-title-text>
           <md-card-title-media>
-            <div class="md-media-lg card-media"></div>
+            <div class="md-media-lg card-media" id="pic{{aluno.matricula}}">{{main.decode(aluno.picture, aluno.matricula)}}</div>
           </md-card-title-media>
         </md-card-title>
       </md-card>

@@ -2,38 +2,35 @@
   'use strict';
 
   angular
-    .module('test')
-    .controller('MainController', MainController);
+  .module('test')
+  .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function MainController() {
     var vm = this;
+    vm.alunosMain = getAlunosMain();
+    vm.decode = decode;
 
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
-    vm.creationDate = 1473262470963;
-    vm.showToastr = showToastr;
-
-    activate();
-
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
+    function decode(images, mat){
+      var src = "data:image/png;base64,";
+      src += images;
+      var newImage = document.createElement('img');
+      newImage.src = src;
+      newImage.width = newImage.height = "50";
+      document.querySelector('#pic'+mat).innerHTML = newImage.outerHTML;
     }
 
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
-
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
-      });
+    function getAlunosMain(){
+      //obtem o valor da chave 'usuarios'caso seja nulo ou indefinido retorna a string '[]''
+      var us = window.localStorage.getItem("alunos") || '[]';
+      //JSON.parse converte a string para objeto
+      us = angular.fromJson(us);
+      //percorre todos os objetos para remover o atributo $$hashkey
+      //utilizado para indexacao no localstorage
+      for(var i=0; i<us.length;i++){
+        delete us[i]["$$hashKey"];
+      }
+      return us;
     }
   }
 })();
