@@ -12,6 +12,8 @@ var x=document.getElementById("demo");
   {
     lat=position.coords.latitude;
     lon=position.coords.longitude;
+    window.lat = lat;
+    window.lon = lon;
     latlon=new google.maps.LatLng(lat, lon)
     mapholder=document.getElementById('map')
     mapholder.style.height='250px';

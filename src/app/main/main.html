@@ -18,7 +18,9 @@
           <span class="md-content">Apresentação: {{aluno.apresentacao}}</span>
         </md-card-title-text>
         <md-card-title-media>
-          <div class="md-media-lg card-media" id="pic{{aluno.matricula}}">{{main.decode(aluno.picture, aluno.matricula)}}</div>
+          <div class="md-media-lg card-media" id="pic{{aluno.matricula}}">
+            <img src="{{aluno.img}}"></img>
+          </div>
         </md-card-title-media>
       </md-card-title>
     </md-card>
