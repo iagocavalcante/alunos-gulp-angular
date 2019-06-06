@@ -2,7 +2,7 @@
   "name": "test",
   "version": "0.0.0",
   "dependencies": {
-    "backendless": "3.1.25"
+    "backendless": "5.2.10"
   },
   "scripts": {
     "test": "gulp test"
