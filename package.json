@@ -44,7 +44,7 @@
     "karma-phantomjs-shim": "1.2.0",
     "karma-coverage": "0.5.5",
     "karma-ng-html2js-preprocessor": "0.2.2",
-    "browser-sync": "2.9.12",
+    "browser-sync": "2.26.5",
     "browser-sync-spa": "1.0.3",
     "http-proxy-middleware": "0.9.1",
     "chalk": "1.1.3",
