@@ -37,7 +37,7 @@
     "main-bower-files": "2.13.1",
     "wiredep": "2.2.2",
     "karma": "4.1.0",
-    "karma-jasmine": "0.3.8",
+    "karma-jasmine": "2.0.1",
     "karma-phantomjs-launcher": "0.2.3",
     "phantomjs": "1.9.20",
     "karma-angular-filesort": "1.0.2",
