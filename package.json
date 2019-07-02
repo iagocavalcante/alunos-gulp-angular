@@ -21,7 +21,7 @@
     "eslint-plugin-angular": "4.0.1",
     "gulp-load-plugins": "2.0.0",
     "gulp-size": "2.1.0",
-    "gulp-uglify": "1.5.4",
+    "gulp-uglify": "3.0.2",
     "gulp-useref": "3.1.6",
     "gulp-util": "3.0.8",
     "gulp-ng-annotate": "2.1.0",
