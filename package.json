@@ -36,7 +36,7 @@
     "gulp-angular-filesort": "1.2.1",
     "main-bower-files": "2.13.1",
     "wiredep": "2.2.2",
-    "karma": "0.13.22",
+    "karma": "4.1.0",
     "karma-jasmine": "0.3.8",
     "karma-phantomjs-launcher": "0.2.3",
     "phantomjs": "1.9.20",
