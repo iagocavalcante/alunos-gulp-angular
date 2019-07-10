@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "estraverse": "4.2.0",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-autoprefixer": "6.1.0",
     "gulp-angular-templatecache": "1.9.1",
     "del": "5.0.0",
