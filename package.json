@@ -8,7 +8,7 @@
     "test": "gulp test"
   },
   "devDependencies": {
-    "estraverse": "4.2.0",
+    "estraverse": "4.3.0",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "6.1.0",
     "gulp-angular-templatecache": "3.0.0",
