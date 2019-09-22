@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('test')
+    .module('serve')
     .config(routeConfig);
 
   function routeConfig($routeProvider) {

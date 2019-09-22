@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('test')
+    .module('serve')
     .directive('acmeMalarkey', acmeMalarkey);
 
   /** @ngInject */
