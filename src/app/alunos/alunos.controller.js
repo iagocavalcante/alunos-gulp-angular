@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-  .module('test')
+  .module('serve')
   .controller('AlunosController', AlunosController);
 
   function AlunosController($location){
