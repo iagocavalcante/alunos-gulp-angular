@@ -1,0 +1,19 @@
+<form class="example-form" (ngSubmit)="salvar()">
+  <video #video autoplay width="150" height="200" autoplay></video>
+  <canvas #canvas width="150" height="200"></canvas>
+  <button type="button" mat-raised-button color="primary" (click)="capture()" class="md-raised md-danger">Tirar Foto</button><br>
+  <mat-form-field class="example--form-control">
+    <input class="example--input" matInput placeholder="Nome" type="text" required [(ngModel)]="novoAluno.nome" name="nome">
+  </mat-form-field>
+  <mat-form-field class="example--form-control">
+    <input class="example--input" matInput placeholder="Sobrenome" required [(ngModel)]="novoAluno.sobrenome" name="sobrenome">
+  </mat-form-field>
+  <mat-form-field class="example--form-control">
+    <input class="example--input" type="email" matInput placeholder="Email" required [(ngModel)]="novoAluno.email" name="email">
+  </mat-form-field>
+  <mat-form-field class="example--form-control">
+    <textarea class="example--input" matInput placeholder="Sobre o aluno" required [(ngModel)]="novoAluno.apresentacao" name="apresentacao"></textarea>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button type="submit" color="primary">Cadastrar</button>
+</form>
