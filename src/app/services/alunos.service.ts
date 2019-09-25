@@ -41,7 +41,7 @@ export class AlunosService {
 
   uploadFotoAluno(foto) {
     return Backendless.Files.upload(foto, 'alunos')
-      .then(file => file.fileURL)
+      .then(file => file)
       .catch(error => error)
   }
 

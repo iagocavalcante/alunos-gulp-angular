@@ -51,7 +51,7 @@ export class NovoAlunoComponent implements OnInit {
   public salvar() {
     this.alunosService.uploadFotoAluno(this.dataURItoBlob(this.novoAluno.foto))
       .then(file => {
-        this.novoAluno.foto = file
+        this.novoAluno.foto = file.fileURL;
         this.alunosService.add(this.novoAluno)
           .then(() => {
             this.novoAluno = new Aluno();
