@@ -1,20 +1,27 @@
-# alunos-gulp-anulgar
-Projeto para cadastro de alunos utilizando o gerador gulp-angular, cadastro composto com 10 campoo, incluindo bater foto com webcam e pegar a geolocalização do usuário do sistema. Utilizando o Backendless para o armazenamento e consulta de dados, salvando geolocalização com GeoPoint podendo ser visulizado os dados no mapa do backendless.
+# AlunosAngularBackendless
 
-Executando o projeto, instale globalmente:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
-```bash
-npm install -g yo gulp bower
-```
+## Development server
 
-Feito isso instale as dependências dos projetos com:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-```bash
-npm install && npm bower
-```
+## Code scaffolding
 
-Após tudo instalado, basta executar o comando: 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```bash
-gulp serve
-```
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
